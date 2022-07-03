@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from "../styles/about.module.css"
+import styles from "../styles/about.module.scss"
 function About() {
   return (
-    <div className={styles.highlight}>
+    <div className={styles.highlightscss}>
       About page 
       <button className='btn btn-success'>Primary</button>
     </div>

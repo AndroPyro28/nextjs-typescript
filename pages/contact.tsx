@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../styles/contact.module.css";
+import styles from "../styles/contact.module.scss";
 
 function Contact() {
   return (
-    <div className={styles.highlight}>
+    <div className={styles.highlightscss}>
       Contact page
     </div>
   );
