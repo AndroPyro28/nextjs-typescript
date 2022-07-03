@@ -1,8 +1,12 @@
-import React from 'react'
+import React from "react";
+import styles from "../styles/contact.module.css";
+
 function Contact() {
   return (
-    <h2>contact page </h2>
-  )
+    <div className={styles.highlight}>
+      Contact page
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;
