@@ -1,12 +1,15 @@
-import React from 'react'
-import styles from "../styles/about.module.css"
+import React from "react";
+import Footer from "../components/Footer";
+
 function About() {
-  return (
-    <div className={styles.highlight}>
-      About page 
-      <button className='btn btn-success'>Primary</button>
-    </div>
-  )
+  return <h1 className="content">About</h1>;
 }
 
-export default About
+export default About;
+
+About.getLayout = function PageLayout(page: React.ReactElement) {
+  return <>
+    {page}
+    <Footer />
+  </>;
+};
