@@ -4,11 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/layout.scss";
-import React, { ReactElement, ReactNode } from "react";
+import React, { ComponentType, ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
 
 type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactElement) => ReactNode;
+  getLayout?: (page: ReactNode) => ReactNode;
 };
 
 type AppPropsWithLayout = AppProps & {
