@@ -8,7 +8,7 @@ import React, { ComponentType, ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
 
 type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactNode) => ReactNode;
+  getLayout?: (page: ReactElement) => ReactElement;
 };
 
 type AppPropsWithLayout = AppProps & {
