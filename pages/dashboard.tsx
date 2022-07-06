@@ -1,9 +1,6 @@
-import React from 'react'
-
+import React, { useEffect, useState } from "react";
 function Dashboard() {
-  return (
-    <div>Dashboard</div>
-  )
+  return <h1>Dashboard</h1>;
 }
 
-export default Dashboard
+export default Dashboard;

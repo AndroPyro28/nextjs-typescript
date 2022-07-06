@@ -1,0 +1,18 @@
+import { NextApiRequest, NextApiResponse } from "next";
+import {getSession} from "next-auth/react"
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+    const session = await getSession({
+        req
+    });
+
+    if(!session) {
+        return res.status(401).json({
+            error: 'Unauthorized User'
+        })
+    }
+
+    return res.status(200).json({
+        message: "Success",
+        greet: `hello ${session.user?.name}`
+    })
+}
